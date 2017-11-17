@@ -102,3 +102,6 @@ ENV/
 
 # sublime projects
 *.sublime-*
+
+# wav_outpufiles
+utils/output_wav/*
