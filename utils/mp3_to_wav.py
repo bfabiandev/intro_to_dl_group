@@ -6,15 +6,11 @@ import pydub
 from tqdm import tqdm
 
 
-FROM_DIR="mp3_input/"
-TO_DIR="wav_output/"
-
 def main(input_dir, output_dir):
-
     if not os.path.isdir(output_dir):
         os.makedirs(output_dir)
 
-    mp3s, m4as = [], []
+    mp3s = []
     print("Scanning Songs...")
     for path, dirs, files in tqdm(os.walk(input_dir)):
         for f in files:
