@@ -16,7 +16,7 @@
       git branch my_branch # if you start on master
       git checkout my_branch
       # do work 
-      git add -s my-filesA my-filesB
+      git add -p my-filesA my-filesB
       git commit -m "my commit message"
    ```
 
